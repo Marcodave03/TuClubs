@@ -1,0 +1,48 @@
+.header{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    height: 28vw;
+    margin: 72px auto 0px;
+}
+
+.header-contents-left .orange{
+    color: #EF5F39;
+}
+
+.header-contents-left h2{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.header-contents-left p{
+    margin-top: 24px;
+    font-family: 'Inter';
+    font-size: 20px
+}
+
+.header-contents-left button{
+ margin-top: 24px;
+ background: transparent;
+ background-color: #EF5F39;
+ color: white;
+ border: transparent;
+ font-size: 16px;
+ border-radius: 28px;
+ padding: 12px 20px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+    background-color: #bf340f;
+}
+
+.image1{
+    width: 250px;
+}
+.markui{
+    height: 100%;
+}
+
+

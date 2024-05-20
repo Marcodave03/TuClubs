@@ -1,0 +1,252 @@
+h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.discover-clubs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+    height: 650px; /* Set a fixed height, adjust as needed */
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+.main-container {
+    display: flex;
+    gap: 12px;
+}
+
+.left-panel {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.right-panel {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container input[type="text"] {
+    font-size: 14px;
+    background-color: #F2F2F2;
+    text-align: center;
+    border: none; 
+    padding: 4px 20px;
+    border-radius: 20px; 
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.search-container input[type="text"]:focus {
+    outline: 1.7px solid #EF5F39; /* Set custom focus outline color */
+}
+
+
+.button-list button {
+    background: transparent;
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(225, 228, 232, 0.7);
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 4px 12px;
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+
+/* Category button highlighting */
+.button-list button.category-button {
+    transition: background-color 0.3s ease;
+}
+
+.button-list button.selected {
+    background-color: #EF5F39;
+    color: white;
+    border: transparent;
+}
+
+.button-list button:not(.selected):hover {
+    background-color: #D1D4D8;
+}
+
+
+/* Card and images container styles */
+.cards-images {
+    display: flex;
+}
+
+.club-cards-container {
+    flex: 3;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align images to the left */
+    flex: 1;
+    justify-content: flex-start; /* Place images at the top */
+    padding-left: 12px;
+}
+
+.side-image {
+    max-width: 50px; /* Restrict the width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 12px;
+}
+
+/* Card grid layout for 2 columns and multiple rows */
+.club-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 12px; /* Gap between columns and rows */
+    justify-content: start; /* Align items to the start */
+}
+
+.club-image-title {
+    display: flex;
+    align-items: center;
+}
+
+.club-image-title h3 {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+.club-description {
+    font-family: 'Inter';
+    font-size: 14px;
+    margin-top: 12px;
+    overflow: hidden; /* Hide overflowing text */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    -webkit-box-orient: vertical; /* Set the box orientation */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflow */
+}
+
+/* Style adjustments for individual cards */
+.club-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #E1E4E8;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+.club-card img {
+    border-radius: 50%;
+    height: 32px;
+    border: 1px solid #E1E4E8; /* Set a thin gray border */
+}
+
+.club-description-button button {
+    background: transparent;
+    background-color: #EF5F39;
+    color: white;
+    border: transparent;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.club-description-button button:hover {
+    background-color: #bf340f;
+}
+
+.tags-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    align-items: center;
+}
+
+.tags button {
+    background: transparent;
+    background-color: white;
+    color: black;
+    border: 1px solid #E1E4E8;
+    font-size: 13px;
+    border-radius: 16px;
+    padding: 4px 8px;
+    margin-left: 4px;
+}
+
+.tags button:first-child {
+    margin-left: 0px;
+}
+
+.button button {
+    background: transparent;
+    background-color: #EF5F39;
+    color: white;
+    font-size: 14px;
+    border: transparent;
+    border-radius: 28px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  
+}
+
+.button button:hover {
+    background-color: #bf340f;
+}
+
+.orange{
+    color: #EF5F39;
+}
+
+/* ... other styles ... */
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+    margin-bottom: 48px;
+}
+
+.pagination button {
+    background-color: white;
+    border: 1px solid #E1E4E8;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination button.active {
+    background-color: #EF5F39;
+    color: white;
+}
+
+.pagination button:not(.active):hover {
+    background-color: #D1D4D8; 
+}
+
+.pagination button:disabled {
+    color: #A1A4A8; 
+}
+
+.highlight-tag {
+    background-color: #E2F1E8 !important;
+    color: #08A45F !important;
+    border: 2px !important;
+    font-size: 14px;
+    border-radius: 5px !important;
+    padding: 4px 12px;
+    margin-left: 8px;
+    cursor: default;
+}

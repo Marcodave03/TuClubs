@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.navbar{
+    padding: 48px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    height: 36px;
+}
+
+.navbar .navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+.navbar .navbar-menu li:hover {
+    color: #EF5F39;
+    transition: color 0.3s ;
+}
+
+.navbar button{
+    background: transparent;
+    background-color: #EF5F39;
+    color: white;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 28px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #bf340f;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu-desktop {
+      display: none;
+    }
+    .navbar-right{
+        display: none;
+    }
+    .menu-icon {
+      display: block; /* Show the menu icon on mobile */
+    }
+    .navbar-menu-mobile {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      top: 60px; /* Adjust based on your navbar's height */
+      left: 0;
+      z-index: 1000;
+    }
+    .navbar-menu-mobile ul {
+      width: 100%;
+      padding: 0;
+    }
+    .navbar-menu-mobile li {
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .menu-icon {
+      display: none; /* Hide the menu icon on desktop */
+    }
+  }
+  

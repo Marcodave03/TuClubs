@@ -1,0 +1,52 @@
+.alert-bar {
+    background-color: #F6F8FE;
+    color: #4E5879;
+    font-family: 'Inter'; 
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+  }
+  
+  .alert-bar .highlight {
+    color: #EF5E38; 
+    text-decoration: none; 
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .alert-bar .highlight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EF5E38;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .alert-bar .highlight:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    color: #4E5879;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .alert-bar .highlight {
+    color: #EF5E38;
+  }
+  

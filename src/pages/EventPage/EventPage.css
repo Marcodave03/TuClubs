@@ -1,0 +1,49 @@
+/* src/styles/EventPage.css */
+.event-page {
+  padding: 20px;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 50px;
+  padding-left: 20px;
+  border-left: 2px solid #ddd;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -70px;
+  top: 0;
+  text-align: right;
+  font-size: 1em;
+  color: #666;
+}
+
+.timeline-date .date-dot {
+  position: absolute;
+  left: 65px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #666;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.timeline-content {
+  margin-left: 20px;
+}
+
+.event-card {
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #ddd;
+}

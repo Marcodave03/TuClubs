@@ -1,0 +1,45 @@
+{
+  "name": "okfixjadi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start-backend": "node server.js",
+    "dev-backend": "nodemon server.js",
+    "build-frontend": "vite build",
+    "preview-frontend": "vite preview",
+    "start-frontend": "vite dev",
+    "dev": "concurrently \"npm run dev-backend\" \"npm run start-frontend\"",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "framer-motion": "^11.1.9",
+    "lucide-react": "^0.376.0",
+    "mongoose": "^8.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.4",
+    "react-router-dom": "^6.23.0",
+    "react-text-transition": "^3.1.0",
+    "react-type-animation": "^3.2.0",
+    "react-vertical-timeline-component": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

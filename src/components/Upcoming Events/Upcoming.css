@@ -1,0 +1,126 @@
+.upcoming-events {
+    margin: 72px auto 0;
+  }
+  
+  .upcoming-events h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .upcoming-events .orange {
+    color: #EF5E38;
+  }
+  
+  .event-box {
+    padding: 20px;
+    border: solid 1px #E1E4E8;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    max-height: 600px;
+    overflow-y: auto;
+    max-width: 700px; /* Set the width of the container */
+}
+  
+  .event-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  .date-section {
+    margin-bottom: 20px;
+  }
+  
+  .date-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .date-header p {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+  }
+  
+  .date-header span {
+    font-weight: normal;
+    color: #999;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: solid 1px #E1E4E8;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    max-width: 100%; /* Cards will fill the container minus padding and borders */
+}
+  
+  .event-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title h4 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+  }
+  
+  .club {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+  }
+  
+  .club p {
+    font-size: 16px;
+    color: #EF5E38;
+  }
+  
+  .location, .date-time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+    color: #757575;
+  }
+  
+  .location p, .date-time p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .date-time {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .tag-chip {
+    background-color: #EF5E38;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 12px;
+    cursor: default;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      flex-direction: column;
+    }
+  }
+  

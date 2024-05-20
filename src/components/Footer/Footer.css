@@ -1,0 +1,46 @@
+.footer {
+    background-color: #07182B; /* Dark blue background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 8vw 30px;
+    font-family: 'Inter';
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 80px;
+    align-items: start; /* Aligns content at the start of each column */
+}
+
+.footer-content-left, .footer-content-center-left, .footer-content-center-right, .footer-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-bottom {
+    color: white;
+    font-size: 14px;
+    margin-top: 60px; /* Spacing above the copyright text */
+    width: 100%;
+}
+
+.footer-content ul li {
+    margin-top: 10px;
+    list-style: none;
+    color: #B9B8BA;
+    transition: color 0.3s ease;
+}
+
+.footer-content ul li:hover {
+    color: white;
+}
+
+.footer-content ul li a {
+    color: inherit; /* Ensures links use the parent color styling */
+    text-decoration: none; /* Removes underline from links */
+}

@@ -1,0 +1,85 @@
+/* src/styles/EventCard.css */
+.event-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Plus Jakarta Sans';
+}
+
+.event-details {
+    flex-grow: 1;
+}
+
+.event-time {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.event-time span {
+    margin-right: 10px;
+}
+
+.event-time .gmt-time {
+    color: #d3a033; /* Gold color for GMT time */
+}
+
+.event-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.event-hosts {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.event-hosts img {
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.event-location {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.event-location img {
+    margin-right: 8px;
+}
+
+.event-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e0f3e0;
+    color: #34a853;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.event-image {
+    flex-shrink: 0;
+}
+
+.event-image img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
